@@ -1,0 +1,342 @@
+/*基本样式*/
+* {
+  outline: 0 !important; 
+  margin: 0;padding: 0;text-decoration: none;
+  list-style: none!important;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%; }
+
+html {
+  height: 100%; }
+
+body {
+  font-family: "Helvetica Neue", "Luxi Sans", "DejaVu Sans", Tahoma, "Hiragino Sans GB", STHeiti, "Microsoft YaHei";
+  color: #666666;
+  background: #e8e8e8;
+  font-size: 14px;
+  /*padding-top: 140px;*/
+  min-height: 100%; }
+
+.main-content {
+  padding-bottom: 20px; }
+
+
+
+h3 {
+  line-height: 1.4em; }
+
+p {
+  margin: 0 0 15px; }
+  p.lead {
+    font-weight: 300; }
+
+strong {
+  font-weight: 700; }
+
+a {
+  color: #007aff; }
+  a:hover {
+    color: #666666;
+    text-decoration: none; }
+
+blockquote {
+  margin-bottom: 30px; }
+  blockquote p {
+    margin-bottom: 10px; }
+  blockquote.pull-right {
+    text-align: right; }
+
+dl {
+  margin: 0 0 20px; }
+  dl dd {
+    margin-bottom: 15px; }
+
+::-moz-selection {
+  background: #007aff;
+  color: white;
+  text-shadow: none; }
+
+::selection {
+  background: #007aff;
+  color: white;
+  text-shadow: none; }
+
+::-webkit-scrollbar {
+  width: 8px; }
+
+::-webkit-scrollbar-thumb {
+  background: #bbbbbb;
+  background: rgba(0, 0, 0, 0.15);
+  border-radius: 5px; }
+
+::-webkit-scrollbar-track {
+  background: #dddddd;
+  background: rgba(0, 0, 0, 0.05); }
+
+/*宽度比例*/
+.w10 { width: 10%; }
+.w20 { width: 20%; }
+.w30 { width: 30%; }
+.w40 { width: 40%; }
+.w50 { width: 50%; }
+.w60 { width: 60%; }
+.w70 { width: 70%; }
+.w80 { width: 80%; }
+.w90 { width: 90%; }
+.w5 { width: 5%; }
+.w15 { width: 15%; }
+.w25 { width: 25%; }
+.w35 { width: 35%; }
+.w33 { width: 33.333%; }
+.w45 { width: 45%; }
+.w55 { width: 55%; }
+.w65 { width: 65%; }
+.w75 { width: 75%; }
+.w85 { width: 85%; }
+.w95 { width: 95%; }
+
+/*nav start*/
+.navbar-mystyle{background-color:#09C; color:#FFF;}
+.mystyle-brand{ background-color:#0087b4; display:block;}
+
+.navbar-mystyle .navbar-nav li .mystyle-color:hover{ background-color:#0087b4; color:#FFF;}
+.navbar-default .navbar-nav>li>a,.navbar-default .navbar-nav>li>a:focus{color:#FFF;}
+.navbar-default .navbar-brand{color:#FFF;}
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover{ background-color:#FFF; color:#000;}
+.navbar-default .navbar-brand:hover{color:#FFF;}
+.navbar-default .dropdown-menu{ width:100%; min-width:1px; border:0px; border-top:1px solid #e5e5e5;}
+
+.navbar-default .navbar-toggle{ border-color:#FFF;}
+.navbar-default .navbar-toggle .icon-bar{ background-color:#FFF;}
+.topbar-num{font-size: 12px;color: #fff;background: #f90;border-radius: 5px;padding: 2px 5px;
+display: inline-block;line-height: 16px;vertical-align: top;text-align: center;}
+
+/*产品与服务下拉内容*/
+.navbar-nav .dropdown .topbar-nav-list{ color:#000; font-size:12px;padding:10px; width:auto; white-space: nowrap;}
+.topbar-nav-col{vertical-align: top;padding: 0 10px; display:inline-block;}
+.topbar-nav-col .topbar-nav-item-title{margin: 3px 0px;color: #999;font-weight: 600; font-size:13px;}
+.topbar-nav-col ul li{ list-style:none; min-width: 160px;height: 28px;line-height: 28px;margin-bottom: 2px;}
+.dropdown-menu .topbar-nav-col ul{ padding-top:5px; padding-left:0px;}
+.topbar-nav-col ul li a{display: block;height: 100%;padding: 0 10px;text-decoration: none;color: #333;}
+.topbar-nav-col ul li a:hover{ background-color:#f2f2f2;}
+.topbar-nav-col .topbar-nav-item{ border-bottom:solid 1px #f2f2f2;} 
+
+
+.dropdown-menu{ min-width:10px;}
+/*左侧导航选中样式*/
+.sBox ul .active{ background-color:#09C;}
+
+/*搜索*/
+.dropdown .search-dropdown{left:auto; right:0px; padding:0px; width:280px;border: 2px solid #008fbf;}
+.dropdown .search-dropdown .form-control{ border:0px;}
+.dropdown .search-dropdown .btn{ padding:7px 12px; border-radius:0px; border:0px; color:#FFF; background-color:#008fbf;}
+/*nav end*/
+
+/*main start*/
+/*left nav*/
+.left-nav{
+    bottom: 0px;
+    top: 50px;
+    z-index: 100;
+    position: fixed;
+    background-color: #293038;
+}
+.left-full {
+    width: 160px;
+    display: block;
+}
+
+.tasks{
+    height: 30px;
+    line-height: 30px;
+    width: 100%;
+    background: #394555;
+    color: #aeb9c2;
+    text-align: center;
+    cursor: pointer;
+}
+.tasks span {
+    line-height: 30px;
+}
+.panel-group .panel + .panel {
+    margin-top: -1px;
+}
+.left-nav  .panel{
+	border: 1px solid #293038!important;
+	border-radius: 0;
+	background: none;
+}
+.left-nav  .panel-heading{
+	background: none;border: none;padding: 0;
+}
+.left-nav .panel-title{
+	width: 100%;
+	height: 40px;
+	padding: 0;
+	font-size: 14px;
+}
+.left-nav .panel-title a{
+	display: block;
+	text-align: center;
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	color: #fafafa;
+	background:#394555;
+}
+.left-nav .panel-title a:hover{
+	background: #42515f;
+	color: #fafafa;
+}
+.left-nav .panel a span{
+	padding-right: 16px;
+}
+.left-nav .panel-body{
+	width: 100%;
+	border: none!important;
+	padding: 0;
+
+}
+.left-nav .panel-body ul{
+	width: 100%;
+	background: none;
+	padding: 0;
+}
+.left-nav .panel-body ul li{
+	width: 100%;
+	height: 40px;
+	text-align: center;
+}
+.left-nav .panel-body ul li.active{
+	background: #09c;
+}
+.left-nav .panel-body ul li a{
+	display: block;
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	background: none;
+	color: #fafafa;
+	text-align: center;
+}
+.left-nav .panel-body ul li a:hover{
+	background: #42515f;color: #fff;
+}
+
+/*right description*/
+
+.right-product {
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    background: #FFF;
+    display: none;
+}
+.right-product.active{
+	display: block;
+}
+.right-full {
+    left: 160px;
+}
+
+
+
+/*myindex*/
+.myindex .title{
+	margin-top: 30px;
+    margin-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+/*时间*/
+.myindex .time-title{
+	height: 70px;overflow: hidden;
+}
+.myindex .time-title .year-month {
+    padding: 10px;
+    background-color: #09C;
+    height: 100%;
+    color: #FFF;
+}
+.myindex .year-month p {
+    margin-bottom: 0px;
+    line-height: 25px;
+}
+.myindex .year-month p span {
+    font-size: 26px;
+}
+.myindex .time-title .hour-minute {
+    color: #09C;
+    line-height: 70px;
+    background-color: #FFF;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.myindex .time-title .hour-minute strong {
+    font-size: 34px;
+}
+/*content*/
+.myindex .content-list{ margin-top:30px;}
+.myindex .content-list .row{ margin-left:0px; margin-right:0px;}
+.myindex .content-list .row .content{ background-color:#FFF;}
+.myindex .content-list .row .content .left-icon{ text-align:center;}
+.myindex .content-list .row .content .right-title{ color:#666666; text-align:center; padding-top:10px;	 padding-bottom:10px;}
+.myindex .content-list .row .content .left-icon span{margin-top: 50px;margin-bottom: 50px;width: 40px;line-height: 40px;color: #FFF;border-radius: 50%;}
+.myindex .content .left-icon .blue{background-color: #2abbeb;}
+.myindex .content .left-icon .violet{background-color: #675499;}
+.myindex .content .left-icon .orange{background-color: #eac553;}
+.myindex .content .left-icon .green{background-color: #1cbba7;}
+
+.myindex .content .right-title .number{ font-size:46px; margin-top:0px;}
+.myindex .content .right-title p{ margin-bottom:5px;}
+.myindex .content .right-title .title-content{ width:130px;}
+.myindex .content .right-title .title-content .btn-default{ background-color:#f5f8f9;}
+
+.myindex .newslist .panel-default{ border:none;}
+.myindex .newslist .panel-default>.panel-heading{ background-color:#f2f3f6; border:none;}
+.myindex.newslist .panel-body{ padding:10px; border-bottom: solid 1px #eaeaea;}
+
+
+/*page 2  tableb*/
+.bb tr th span{
+	padding: 0 5px;
+}
+button span{
+	margin-right: 10px;
+}
+.table tr td button.btn-default{
+	margin-right: 15px;
+}
+.table tr td button span{
+	margin-right: 15px;
+}
+.modal-body .pic-choose a{
+	position: relative;
+	display: block;
+	height: 50px;
+}
+ .modal-body .pic-choose a input[type=file]{
+	position: absolute;
+	top: 0;bottom: 0;left: 0;
+	opacity: 0!important;
+	display: block;
+	height: 50px;
+}
+.pic-choose a span{
+	position: absolute;
+	top: 0;bottom: 0;left: 0;
+	width: 50px;height: 50px;font-size: 50px;line-height: 50px;text-align: center;
+	color: #666;
+}
+/*.chuli{
+	position: absolute;
+	left: 160px;
+	bottom: 50px;
+}*/
+/*main end*/
+
+

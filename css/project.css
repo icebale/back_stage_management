@@ -1,0 +1,13 @@
+.navbar-default{
+	height: 80px;
+}
+.navbar-default .navbar-nav > li > a{
+	height: 76px;
+	line-height: 46px;
+}
+.active{
+	border-bottom: 4px solid #0086da;
+}
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus{
+	color: #0086da;
+}

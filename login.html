@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="renderer" content="webkit">
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/login.css"/>
+		<!--[if lt IE 9]>-->
+		<script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		<!--让IE8支持响应式-->
+		<script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+		<!--<![endif]-->
+
+	</head>
+
+	<body class="login">
+		<div class="login-wrapper">
+			<div class="login-container">
+				<a href="index.html"><img width="100" height="30" src="img/logo-login@2x.png" /></a>
+				<form>
+					<div class="form-group">
+						<input class="form-control" placeholder="用户名或邮箱" type="text">
+					</div>
+					<div class="form-group">
+						<input class="form-control" placeholder="密码" type="text">
+					</div>
+					<div class="form-group" style="padding: 20px 0;">
+						<input onclick="dakai()" type="button" id="denglu" value="登录">
+					</div>
+					<div class="form-options clearfix">
+						<a class="pull-right" href="#">忘记密码 ?</a>
+						<div class="text-left" style="padding-left: 10px;">
+							<label class="checkbox"><input type="checkbox"><span>记住我</span></label>
+						</div>
+					</div>
+				</form>
+				<div class="social-login clearfix">
+					<a class="btn btn-primary pull-left facebook" href=""><i class="icon-facebook"></i>Facebook 登录</a>
+					<a class="btn btn-primary pull-right twitter" href=""><i class="icon-twitter"></i>Twitter 登录</a>
+				</div>
+				<p class="signup">
+					还未注册?
+					<a href="signup1.html">去注册&gt;&gt;</a>
+				</p>
+			</div>
+		</div>
+
+		<script src="js/jquery-1.12.4.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(function(){
+				$(".login-container").fadeIn(1000);
+			})
+			function dakai(){
+				alert(1)
+				window.location.href = "page1.html"
+			}
+		</script>
+	</body>
+
+</html>
